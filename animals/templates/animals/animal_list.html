@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Liste des Animaux</title>
+</head>
+<body>
+  <!-- animal_list.html -->
+<h1>Liste des Animaux</h1>
+<ul>
+    {% for animal in animals %}
+        <li>
+            <h2>{{ animal.name }}</h2>
+            <p>Description: {{ animal.description }}</p>
+            <p>Latitude: {{ animal.latitude }}</p>
+            <p>Longitude: {{ animal.longitude }}</p>
+            <p>Start Time: {{ animal.start_time }}</p>
+            <p>End Time: {{ animal.end_time }}</p>
+            {% if animal.image %}
+                <img src="{{ animal.image.url }}" alt="Image de {{ animal.name }}" width="200">
+            {% else %}
+                <p>Aucune image disponible</p>
+            {% endif %}
+        </li>
+    {% endfor %}
+</ul>
+
+</body>
+</html>
