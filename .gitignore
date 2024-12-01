@@ -1,0 +1,6 @@
+venv/*
+*.jpg
+*.png
+*.pdf
+__pycache__
+.DS_Storenode_modules/

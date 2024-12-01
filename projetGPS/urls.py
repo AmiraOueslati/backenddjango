@@ -24,7 +24,7 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/animals/', include('animals.urls')),  # Inclut les urls de l'app 'animals'
+    path('animals/', include('animals.urls')),  # Inclut les urls de l'app 'animals'
 ]
 if settings.DEBUG:  # Assurez-vous que cela fonctionne uniquement en mode debug
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

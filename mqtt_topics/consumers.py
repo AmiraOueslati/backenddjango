@@ -22,6 +22,7 @@ TOPICS = [
     "oueslati_amira/feeds/mouton3"
 ]
 
+
 class AnimalTrackingConsumer(MqttConsumer):
     async def connect(self):
         """
