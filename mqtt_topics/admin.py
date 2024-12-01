@@ -1,3 +1,7 @@
 from django.contrib import admin
 
-# Register your models here.
+from mqtt_topics.models import LocationData
+
+
+
+admin.site.register(LocationData)
